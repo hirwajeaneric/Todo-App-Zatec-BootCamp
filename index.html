@@ -21,31 +21,22 @@
           </div>
           <div class="form-inputs m-4">
             <label for="date" class="text-white">Date</label>
-            <input type="datetime-local" name="date" placeholder="name your task" id="name"
+            <input type="datetime-local" name="date" placeholder="name your task" id="date"
             class="form-input-item block w-full px-3 py-1.5 text-slate-400 mt-2 border border-solid border-black-400 rounded-lg transition ease-in-out focus:text-slate-900 focus:border-black-600 focus: outline-none">
           </div>
           <div class="form-inputs m-4">
             <label for="completed" class="text-white">Completed?</label>
             <label for="yes" class="ml-8 mr-2 text-white">Yes</label>
-            <input type="radio" name="completed" id="yes">
+            <input type="radio" name="completed" id="yes" value="1">
             <label for="no" class="ml-8 mr-2 text-white">No</label>
-            <input type="radio" checked name="completed" id="no">
+            <input type="radio" name="completed" id="no" value="2">
           </div>
           <button type="button" id="save"
           class="save-button block m-4 px-3 py-1.5 text-black bg-cyan-500 hover:bg-cyan-600 font-bold border border-none rounded-lg focus:bg-cyan-700 shadow-sm shadow-black">Save</button>
         </form>
       </div>
 
-      <div class="task-container bg-gray-700 w-full p-2 border rounded-lg border-transparent mt-6 shadow-lg shadow-black">
-        <div class="a-task mb-3 flex flex-col w-full bg-green-600 shadow-md max-w-md border rounded-lg border-transparent shadow-lg shadow-black">
-          <p class="task-name mt-2 ml-2 mr-2 line-through">Frontend challenge asfsadfsd.</p>
-          <p class="task-date mb-2 ml-3 mr-3 text-xs text-right">03/30/2022,03:34 PM</p>
-        </div>
-
-        <div class="a-task mb-3 flex flex-col w-full bg-slate-300 shadow-md max-w-md border rounded-lg border-transparent shadow-lg shadow-black">
-          <p class="task-name mt-2 ml-2 mr-2 text-black">Frontend challenge asfsadfsd.</p>
-          <p class="task-date mb-2 ml-3 mr-3 text-xs text-right">03/30/2022,03:34 PM</p>
-        </div>
+      <div id="task-container" class="task-container bg-gray-700 w-full border rounded-lg border-transparent mt-6 shadow-lg shadow-black">
       </div>
 
     </div>
