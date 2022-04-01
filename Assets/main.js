@@ -48,7 +48,6 @@ function putTasksInDiv(linethroughStyle) {
     const taskDate = document.createElement('p');
     taskDate.classList.add("mt-2" ,"ml-2" ,"mb-2" ,"ml-3" ,"mr-3" ,"text-xs" ,"text-right");
     taskDate.innerHTML = date;
-    taskDate.classList.add(`${linethroughStyle}`);
     
     //Adding the paragraph elements to the div
     taskDiv.appendChild(taskName);
